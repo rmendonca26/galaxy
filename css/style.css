@@ -1,0 +1,13 @@
+.banner {
+	width: 100%; height: 600px;
+	background-image: url(../images/planet.png), url(../images/planet-2.png), url(../images/planet-3.png), url(../images/planet-4.png), url(../images/galaxy-1.jpg);
+	animation: animate-background linear 40s infinite;
+
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 20%, 20%, 20%, 20%, 100%;
+}
+
+@keyframes animate-background {
+	from{ background-position: 120% 70px, 0px 0px, 500px 300px, 600px 600px, 0px 0px; }
+	to { background-position: -20% 70px, -1000px 0px, 0px 0px, -1200px 0px, 0px 0px; }
+}
